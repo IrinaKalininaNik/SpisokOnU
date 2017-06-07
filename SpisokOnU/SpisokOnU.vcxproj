@@ -60,6 +60,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="SpisokOnU.h" />
   </ItemGroup>
   <ItemGroup>

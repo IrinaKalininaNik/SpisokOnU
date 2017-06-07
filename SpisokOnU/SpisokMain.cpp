@@ -1,4 +1,5 @@
 #include "SpisokOnU.h"
+#include "Queue.h"
 #include <iostream>
 
 int main()
@@ -14,7 +15,16 @@ int main()
 	{
 		std:: cout<<L.Get(i)<<" "<<std::endl;
 	}
-	std::cin.get();
+	
+	 Queue<int> Q;
+	 Q.push(1);
+	 Q.push(3);
+	 Q.push(5);
+	 std::cout<<std::endl<<Q.pop()<<std::endl;
+	 std::cout<<Q.pop()<<std::endl;
+	 std::cout<<Q.pop()<<std::endl;
+	 std::cin.get();
+	 
 	return 0;
 
 }

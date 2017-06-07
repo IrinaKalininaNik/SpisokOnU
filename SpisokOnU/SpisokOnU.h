@@ -117,6 +117,7 @@ void Link<T>::DeleteStart()
 	Node<T>* Cat = node->next;
 	delete node;
 	node = Cat;
+	size--;
 }
 
 template <class T>
@@ -133,6 +134,7 @@ void Link<T>::DeleteEnd()
 		}
 	delete D;
 	Dog->next = 0;
+	size--;
 }
 
 template <class T>
