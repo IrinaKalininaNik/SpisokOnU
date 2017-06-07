@@ -62,6 +62,7 @@
   <ItemGroup>
     <ClInclude Include="Queue.h" />
     <ClInclude Include="SpisokOnU.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SpisokMain.cpp" />

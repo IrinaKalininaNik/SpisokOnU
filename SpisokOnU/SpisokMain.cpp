@@ -1,5 +1,6 @@
 #include "SpisokOnU.h"
 #include "Queue.h"
+#include "Stack.h"
 #include <iostream>
 
 int main()
@@ -23,6 +24,16 @@ int main()
 	 std::cout<<std::endl<<Q.pop()<<std::endl;
 	 std::cout<<Q.pop()<<std::endl;
 	 std::cout<<Q.pop()<<std::endl;
+
+	 Stack<int> S;
+	 S.push(7);
+	 S.push(8);
+	 S.push(9);
+	 S.push(10);
+	 std::cout<<std::endl<<S.pop()<<std::endl;
+	 std::cout<<S.pop()<<std::endl;
+	 std::cout<<S.pop()<<std::endl;
+	 std::cout<<S.pop()<<std::endl;
 	 std::cin.get();
 	 
 	return 0;
