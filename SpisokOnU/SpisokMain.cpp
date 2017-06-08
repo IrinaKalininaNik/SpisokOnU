@@ -21,19 +21,15 @@ int main()
 	 Q.push(1);
 	 Q.push(3);
 	 Q.push(5);
-	 std::cout<<std::endl<<Q.pop()<<std::endl;
-	 std::cout<<Q.pop()<<std::endl;
-	 std::cout<<Q.pop()<<std::endl;
+	
+	 Q.fail();
 
 	 Stack<int> S;
 	 S.push(7);
 	 S.push(8);
 	 S.push(9);
 	 S.push(10);
-	 std::cout<<std::endl<<S.pop()<<std::endl;
-	 std::cout<<S.pop()<<std::endl;
-	 std::cout<<S.pop()<<std::endl;
-	 std::cout<<S.pop()<<std::endl;
+	 S.fail();
 	 std::cin.get();
 	 
 	return 0;

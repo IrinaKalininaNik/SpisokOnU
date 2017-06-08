@@ -11,6 +11,7 @@ public:
 	T pop();
 	void push(T);
 	T back();
+	void fail();
 };
 
 template <class T>
@@ -33,5 +34,18 @@ T Stack<T>::back()
 	return Ram.Get(Ram.GetEnd());
 }
 
+template <class T>
+void Stack<T>::fail()
+{
+	std::ofstream fil("Stack");
+	try
+	{
+		
+		while(true)
+			fil<<pop()<<std::endl;
+	}
+	catch(int){}
+		fil.close();
+}
 
 #endif

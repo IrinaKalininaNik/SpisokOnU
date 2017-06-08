@@ -125,6 +125,12 @@ void Link<T>::DeleteEnd()
 {
 	if(node==nullptr)
 		throw 2;
+	if(size ==1)
+	{
+		delete node;
+		node = nullptr;
+		return;
+	}
 	Node<T>* Dog = node;
 	Node<T>* D = node;
 		while(!isEnd(D)) 
